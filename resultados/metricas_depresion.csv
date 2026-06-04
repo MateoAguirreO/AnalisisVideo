@@ -1,0 +1,4 @@
+dx,modelo,accuracy_mean,accuracy_std,precision_macro_mean,precision_macro_std,recall_macro_mean,recall_macro_std,f1_macro_mean,f1_macro_std,roc_auc_mean,roc_auc_std
+depresion,rf,0.735,0.0366,0.4384,0.1564,0.5138,0.0408,0.4564,0.0717,0.5283,0.1215
+depresion,xgb,0.6925,0.0748,0.5291,0.1601,0.5294,0.0828,0.5106,0.1007,0.513,0.1352
+depresion,svm,0.6325,0.1005,0.5014,0.1245,0.5104,0.1026,0.497,0.1082,0.5056,0.1289

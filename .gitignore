@@ -1,0 +1,30 @@
+# --- PDFs descargados y artefactos generados por el dossier ---
+papers/                       # PDFs de acceso abierto (copyright) + manifiestos
+papers/_manifest_descargas.csv
+papers/_no_descargados.txt
+
+# --- Modelos pesados de MediaPipe (se descargan con el script) ---
+models/
+*.task
+
+# --- Salidas derivadas de datos clinicos (privacidad: NO subir) ---
+features/                     # CSVs de features por participante
+resultados/                   # metricas, SHAP, reportes
+*_smoke.csv
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- SO / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Nota: se mantienen en git los entregables ->
+#   dossier_literatura_video.md, top10_papers.md, requirements.txt,
+#   config.py y src/*.py
