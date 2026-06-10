@@ -1,0 +1,4 @@
+modelo_a,modelo_b,t,p,sig_bonf,delta_auc
+l1logreg,rf,0.167,0.8682,False,0.0056
+l1logreg,xgb,1.623,0.1111,False,0.0577
+rf,xgb,1.465,0.1494,False,0.0521

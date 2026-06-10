@@ -1,6 +1,7 @@
 # Pipeline multimodal (video) - deteccion de ansiedad/depresion
 numpy
 pandas
+scipy
 openpyxl
 opencv-python
 mediapipe
