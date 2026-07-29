@@ -1,0 +1,5 @@
+dx,config,spearman_rho,p_valor
+depresion,mutinfo_ridge,0.1644,0.177
+depresion,mutinfo_rf,0.1349,0.2691
+depresion,freg_ridge,0.1644,0.177
+depresion,freg_rf,0.1349,0.2691

@@ -1,0 +1,3 @@
+dx,config,auc_real_5fold,auc_nulo_media,auc_nulo_p90,auc_nulo_p95,p_valor,n_permutaciones
+ansiedad,mutinfo_logreg,0.6298,0.5029,0.6215,0.6494,0.093,300
+depresion,mutinfo_rf,0.7423,0.5016,0.6305,0.6523,0.0033,300

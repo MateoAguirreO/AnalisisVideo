@@ -1,0 +1,5 @@
+dx,metodo,base_learners,auc_mean,auc_std
+ansiedad,ensamble_top3,"mutinfo_logreg,anovacorr_logreg,stability_logreg",0.5191,0.119
+ansiedad,mutinfo_logreg_k_amplio,"[4, 6, 8, 12, 16, 24, 32]",0.5668,0.106
+depresion,ensamble_top3,"mutinfo_rf,mutinfo_logreg,rfimportance_logreg",0.6088,0.1123
+depresion,mutinfo_rf_k_amplio,"[4, 6, 8, 12, 16, 24, 32]",0.6582,0.1745

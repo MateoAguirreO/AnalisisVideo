@@ -1,0 +1,6 @@
+{
+  "config": "mutinfo_logreg",
+  "params": {
+    "sel__k": 4
+  }
+}

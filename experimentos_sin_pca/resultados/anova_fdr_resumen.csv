@@ -1,0 +1,3 @@
+dx,features_signif_FDR,q_min_FDR,anova_modelos_p,kruskal_modelos_p
+ansiedad,0,0.5457,0.4301,0.5698
+depresion,0,0.5935,0.8927,0.8143

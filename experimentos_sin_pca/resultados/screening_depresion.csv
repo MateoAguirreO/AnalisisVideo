@@ -1,0 +1,13 @@
+config,auc_mean,auc_std,f1_mean,acc_mean,n_outer_folds
+mutinfo_rf,0.7314,0.1451,0.6338,0.7188,10
+mutinfo_logreg,0.6144,0.1752,0.5529,0.575,10
+rfimportance_logreg,0.5643,0.1241,0.4953,0.5625,10
+anovacorr_logreg,0.5136,0.0977,0.4983,0.5687,10
+anova_logreg,0.5117,0.1528,0.5061,0.5625,10
+anova_rf,0.5018,0.1634,0.5076,0.6438,10
+rfimportance_rf,0.5008,0.1287,0.5273,0.6438,10
+anova_xgb,0.5003,0.198,0.4997,0.65,10
+l1logreg,0.486,0.102,0.448,0.5687,10
+anovacorr_rf,0.48,0.1183,0.471,0.6188,10
+stability_logreg,0.3951,0.1605,0.4399,0.5062,10
+stability_rf,0.3738,0.1666,0.4102,0.5437,10

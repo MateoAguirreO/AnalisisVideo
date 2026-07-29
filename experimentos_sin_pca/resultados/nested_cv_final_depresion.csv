@@ -1,0 +1,4 @@
+config,auc_mean,auc_std,f1_mean,acc_mean,n_outer_folds
+mutinfo_rf,0.6617,0.1482,0.6115,0.7075,25
+mutinfo_logreg,0.5922,0.1308,0.5039,0.54,25
+rfimportance_logreg,0.5389,0.1224,0.485,0.5525,25

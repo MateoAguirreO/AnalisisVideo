@@ -1,0 +1,7 @@
+config,auc_ventana_mean,auc_ventana_std,auc_participante_mean,auc_participante_std
+mutinfo_logreg,0.587,0.0486,0.5845,0.0543
+anova_rf,0.5637,0.0397,0.5833,0.0477
+mutinfo_rf,0.5574,0.0232,0.5531,0.0267
+l1logreg,0.538,0.0334,0.5503,0.0331
+rfimportance_rf,0.5302,0.023,0.5322,0.0293
+anovacorr_rf,0.5102,0.0436,0.5141,0.0448

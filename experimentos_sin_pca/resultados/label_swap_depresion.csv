@@ -1,0 +1,13 @@
+config,auc_mean,auc_std,f1_mean
+mutinfo_logreg,0.5561,0.1135,0.4918
+anovacorr_rf,0.4872,0.1518,0.4238
+mutinfo_rf,0.465,0.156,0.4754
+anovacorr_logreg,0.4619,0.1362,0.5079
+stability_rf,0.4025,0.1216,0.4131
+l1logreg,0.4019,0.146,0.3948
+stability_logreg,0.3986,0.1488,0.4284
+anova_logreg,0.3769,0.0962,0.4023
+anova_xgb,0.3739,0.0948,0.4066
+rfimportance_logreg,0.3717,0.0792,0.4358
+anova_rf,0.3189,0.0834,0.3923
+rfimportance_rf,0.2944,0.1078,0.3965

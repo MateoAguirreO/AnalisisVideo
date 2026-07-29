@@ -1,0 +1,5 @@
+dx,config,spearman_rho,p_valor
+ansiedad,mutinfo_ridge,-0.1908,0.1162
+ansiedad,mutinfo_rf,-0.0424,0.7292
+ansiedad,freg_ridge,-0.1908,0.1162
+ansiedad,freg_rf,-0.0424,0.7292

@@ -1,0 +1,5 @@
+feature,shap_importance
+frown_p90,0.40785072769909475
+blink_slope,0.2103682404809899
+cheek_squint_skew,0.13174737841726408
+brow_inner_up_slope,0.03791831521580982

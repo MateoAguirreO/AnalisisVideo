@@ -1,0 +1,4 @@
+config,auc_mean,auc_std,f1_mean,acc_mean,n_outer_folds
+mutinfo_logreg,0.5726,0.127,0.4826,0.535,25
+anovacorr_logreg,0.5056,0.126,0.4759,0.57,25
+stability_logreg,0.4751,0.1202,0.4629,0.525,25
