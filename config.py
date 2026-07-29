@@ -8,7 +8,7 @@ RUTA_MUESTRAS = Path(
     r"c:/Users/USUARIO/Documents/Maestria/analisis-espectrogramas/.MUESTRAS_SAMANÁ/Muestras"
 )
 RUTA_LABELS = Path(
-    r"c:/Users/USUARIO/Documents/Maestria/analisis-espectrogramas/.MUESTRAS_SAMANÁ/Base de Datos Trabajo de campo RESULTADOS.xlsx"
+    r"C:/Users/mateo/OneDrive/Documents/Tesis/.local/Base de Datos Trabajo de campo RESULTADOS.xlsx"
 )
 
 # --- Modelos MediaPipe (Tasks API) ---

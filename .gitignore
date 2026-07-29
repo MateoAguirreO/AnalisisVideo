@@ -24,6 +24,7 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+.claude/
 
 # Nota: se mantienen en git los entregables ->
 #   dossier_literatura_video.md, top10_papers.md, requirements.txt,
