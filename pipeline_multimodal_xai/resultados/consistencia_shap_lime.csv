@@ -1,0 +1,7 @@
+dx,caso,pid,jaccard_top10,spearman_rank
+ansiedad,TP,61,0.111,-0.252
+ansiedad,FP,44,0.25,0.276
+ansiedad,TN,54,0.111,-0.252
+depresion,TP,35,0.111,-0.252
+depresion,FP,15,0.176,-0.266
+depresion,TN,9,0.176,0.021

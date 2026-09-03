@@ -1,0 +1,5 @@
+feature,shap_importance,modalidad
+vid__anger_mean,0.07587561478462512,video
+aud__mfcc2_sma3_stddevNorm__p50,0.031956674244989346,audio
+vid__anger_std,0.015922503418502685,video
+vid__AU01_mean,0.010891175672748514,video

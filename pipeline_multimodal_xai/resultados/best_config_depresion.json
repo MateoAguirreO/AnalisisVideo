@@ -1,0 +1,10 @@
+{
+  "dx": "depresion",
+  "audio_config": "l1logreg",
+  "video_config": "anova_rf",
+  "early_config": "anova_mlp",
+  "ganador": "soft_vote",
+  "auc_ganador": 0.6742,
+  "auc_mejor_modalidad_sola": 0.6382,
+  "delta_fusion": 0.036
+}

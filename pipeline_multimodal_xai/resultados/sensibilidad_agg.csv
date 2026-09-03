@@ -1,0 +1,7 @@
+dx,agg,auc_soft_vote_mean,auc_std,n_folds
+ansiedad,mean,0.681,0.1458,15
+ansiedad,median,0.6852,0.1401,15
+ansiedad,p80,0.6866,0.1416,15
+depresion,mean,0.6886,0.1205,15
+depresion,median,0.6825,0.1258,15
+depresion,p80,0.6713,0.1259,15

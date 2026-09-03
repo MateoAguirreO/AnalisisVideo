@@ -1,0 +1,10 @@
+{
+  "dx": "ansiedad",
+  "audio_config": "anova_xgb",
+  "video_config": "anova_logreg",
+  "early_config": "anova_logreg",
+  "ganador": "soft_vote",
+  "auc_ganador": 0.6675,
+  "auc_mejor_modalidad_sola": 0.6606,
+  "delta_fusion": 0.0069
+}

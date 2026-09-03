@@ -1,0 +1,4 @@
+metrica,media,std,p05,p95
+coef_rel_audio,0.502,0.201,0.168,0.881
+coef_rel_video,0.498,0.201,0.119,0.832
+alpha_pond_auc (peso audio),0.533,0.246,0.106,1.0

@@ -1,0 +1,9 @@
+feature,shap_importance
+logRelF0-H1-H2_sma3nz_amean,0.39742327
+loudness_sma3_percentile20.0,0.286236
+logRelF0-H1-A3_sma3nz_amean,0.2045172
+loudness_sma3_percentile50.0,0.1468434
+mfcc4_sma3_amean,0.14242238
+mfcc4V_sma3nz_amean,0.11499035
+loudness_sma3_amean,0.10181082
+spectralFluxUV_sma3nz_amean,0.06330125

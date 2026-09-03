@@ -1,0 +1,14 @@
+metodo,auc_mean,auc_std,f1_mean,bacc_mean,n_folds
+video:anova_rf,0.6567,0.1188,0.5718,0.5732,10
+video:mutinfo_rf,0.6483,0.082,0.6063,0.6091,10
+audio:l1logreg,0.6435,0.1298,0.5736,0.5934,10
+video:l1logreg,0.638,0.1761,0.596,0.6289,10
+video:anova_logreg,0.619,0.1363,0.5806,0.5934,10
+early:anova_mlp,0.5997,0.0956,0.4569,0.5113,10
+video:mutinfo_logreg,0.5932,0.1188,0.5779,0.5951,10
+audio:anova_rf,0.5912,0.157,0.4932,0.5239,10
+audio:anova_logreg,0.5796,0.1623,0.4657,0.4978,10
+audio:anova_xgb,0.5625,0.1446,0.5283,0.5621,10
+early:l1logreg,0.5552,0.1653,0.5688,0.5826,10
+early:anova_logreg,0.5235,0.1515,0.4831,0.4948,10
+early:mutinfo_rf,0.4574,0.1479,0.4602,0.4795,10

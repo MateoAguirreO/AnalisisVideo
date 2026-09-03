@@ -1,0 +1,3 @@
+dx,meta,auc_real_5fold,auc_nulo_media,auc_nulo_p95,p_valor,n_permutaciones
+ansiedad,soft_vote,0.6764,0.4924,0.6529,0.0448,200
+depresion,soft_vote,0.6742,0.482,0.6646,0.0398,200

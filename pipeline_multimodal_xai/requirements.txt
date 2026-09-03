@@ -1,0 +1,4 @@
+# Pipeline multimodal (audio eGeMAPS + video AU) con explicabilidad.
+# Extiende ../requirements.txt (numpy, pandas, scipy, scikit-learn, xgboost, shap).
+lime
+matplotlib

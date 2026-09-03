@@ -1,0 +1,12 @@
+depresion — caso TP (pid 35), y=1, p_oof=0.994, p_full=0.712
+
+  [rostro] vid__anger_mean > 0.02                        +0.2866
+  [rostro] vid__anger_std > 0.04                         -0.0326
+  [voz  ] -1.86 < aud__mfcc2_sma3_stddevNorm__p50 <= -1.47 -0.0255
+  [voz  ] aud__VoicedSegmentsPerSec__mean > 2.52        -0.0110
+  [voz  ] aud__F2amplitudeLogRelF0_sma3nz_amean__mean > -86.71 +0.0110
+  [voz  ] -1.32 < aud__F3amplitudeLogRelF0_sma3nz_stddevNorm__p20 <= -1.12 -0.0087
+  [voz  ] 0.18 < aud__spectralFluxV_sma3nz_amean__p80 <= 0.22 -0.0083
+  [voz  ] aud__mfcc4V_sma3nz_amean__p50 <= -17.86       +0.0075
+  [voz  ] aud__loudness_sma3_stddevNorm__p80 <= 0.59    +0.0072
+  [voz  ] -92.93 < aud__F1amplitudeLogRelF0_sma3nz_amean__p80 <= -74.88 -0.0056

@@ -1,0 +1,12 @@
+ansiedad — caso FP (pid 44), y=0, p_oof=0.982, p_full=0.813
+
+  [rostro] vid__AU15_std > 0.18                          +0.2718
+  [voz  ] aud__logRelF0-H1-H2_sma3nz_amean__p50 <= 0.18 +0.2538
+  [voz  ] aud__logRelF0-H1-H2_sma3nz_amean__mean <= 0.02 +0.0597
+  [voz  ] aud__logRelF0-H1-H2_sma3nz_amean__p80 <= 1.91 +0.0268
+  [voz  ] 1.07 < aud__mfcc2V_sma3nz_stddevNorm__std <= 4.34 +0.0191
+  [voz  ] aud__spectralFluxUV_sma3nz_amean__mean <= 0.06 -0.0179
+  [voz  ] 0.63 < aud__loudness_sma3_percentile80.0__p20 <= 0.74 -0.0167
+  [voz  ] aud__loudness_sma3_percentile50.0__p20 <= 0.29 -0.0142
+  [voz  ] aud__mfcc2V_sma3nz_stddevNorm__p80 <= -0.88   -0.0141
+  [voz  ] aud__mfcc1_sma3_amean__p20 <= -6.46           +0.0095

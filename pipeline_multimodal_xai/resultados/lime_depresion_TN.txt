@@ -1,0 +1,12 @@
+depresion — caso TN (pid 9), y=0, p_oof=0.009, p_full=0.554
+
+  [rostro] vid__anger_mean > 0.02                        +0.2882
+  [voz  ] aud__mfcc2_sma3_stddevNorm__p50 > -1.03       +0.0719
+  [rostro] 0.33 < vid__AU01_mean <= 0.37                 +0.0134
+  [voz  ] aud__mfcc3_sma3_stddevNorm__p20 <= -3.45      +0.0098
+  [voz  ] aud__mfcc2V_sma3nz_amean__std <= 3.83         -0.0097
+  [voz  ] aud__F1frequency_sma3nz_stddevNorm__std <= 0.04 -0.0090
+  [voz  ] aud__F2amplitudeLogRelF0_sma3nz_stddevNorm__p80 <= -0.91 +0.0081
+  [voz  ] aud__slopeV500-1500_sma3nz_amean__p20 <= -0.01 +0.0080
+  [voz  ] aud__StddevUnvoicedSegmentLength__p20 <= 0.11 -0.0078
+  [rostro] 0.07 < vid__AU28_mean <= 0.11                 +0.0069

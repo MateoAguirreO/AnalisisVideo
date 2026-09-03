@@ -1,0 +1,5 @@
+feature,shap_importance,modalidad
+vid__AU15_std,0.5785758499833437,video
+aud__logRelF0-H1-H2_sma3nz_amean__p50,0.5025131044584943,audio
+aud__logRelF0-H1-H2_sma3nz_amean__mean,0.11660764386883349,audio
+aud__logRelF0-H1-H2_sma3nz_amean__p80,0.04753983867630693,audio

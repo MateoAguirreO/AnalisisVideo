@@ -1,0 +1,12 @@
+depresion — caso FP (pid 15), y=0, p_oof=0.974, p_full=0.317
+
+  [rostro] 0.01 < vid__anger_mean <= 0.02                -0.0421
+  [voz  ] -1.86 < aud__mfcc2_sma3_stddevNorm__p50 <= -1.47 -0.0308
+  [voz  ] 84.40 < aud__F0semitoneFrom27.5Hz_sma3nz_meanFallingSlope__mean <= 157.56 +0.0175
+  [rostro] 0.03 < vid__X_std <= 0.04                     +0.0169
+  [voz  ] 0.13 < aud__F0semitoneFrom27.5Hz_sma3nz_stddevNorm__p80 <= 0.16 -0.0162
+  [voz  ] 0.29 < aud__F1bandwidth_sma3nz_stddevNorm__mean <= 0.32 +0.0153
+  [voz  ] aud__mfcc1_sma3_stddevNorm__p20 > -3.33       +0.0149
+  [voz  ] aud__slopeUV0-500_sma3nz_amean__p20 > 0.08    -0.0147
+  [voz  ] -2.29 < aud__mfcc1_sma3_stddevNorm__p50 <= -1.80 +0.0139
+  [rostro] vid__AU15_mean > 0.43                         -0.0138

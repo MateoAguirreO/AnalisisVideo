@@ -1,0 +1,12 @@
+ansiedad — caso TN (pid 54), y=0, p_oof=0.001, p_full=0.189
+
+  [rostro] vid__AU15_std <= 0.15                         -0.2565
+  [voz  ] 1.90 < aud__logRelF0-H1-H2_sma3nz_amean__p50 <= 3.14 -0.0436
+  [voz  ] 1.05 < aud__HNRdBACF_sma3nz_amean__std <= 1.21 +0.0252
+  [voz  ] 0.19 < aud__MeanUnvoicedSegmentLength__p50 <= 0.26 +0.0218
+  [rostro] vid__AU17_mean <= 0.47                        +0.0214
+  [voz  ] -34.87 < aud__equivalentSoundLevel_dBp__p50 <= -32.65 -0.0208
+  [voz  ] aud__loudness_sma3_amean__std <= 0.11         -0.0191
+  [voz  ] 3.70 < aud__mfcc3_sma3_amean__std <= 4.16     +0.0184
+  [voz  ] aud__F2bandwidth_sma3nz_amean__std <= 63.16   +0.0173
+  [voz  ] aud__loudness_sma3_amean__p80 <= 0.52         -0.0166

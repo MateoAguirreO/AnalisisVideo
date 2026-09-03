@@ -1,0 +1,12 @@
+ansiedad — caso TP (pid 61), y=1, p_oof=0.759, p_full=0.552
+
+  [rostro] 0.17 < vid__AU15_std <= 0.18                  +0.0704
+  [voz  ] 0.18 < aud__logRelF0-H1-H2_sma3nz_amean__p50 <= 1.90 +0.0369
+  [rostro] vid__AU11_mean <= 0.33                        +0.0248
+  [voz  ] aud__F0semitoneFrom27.5Hz_sma3nz_meanRisingSlope__p20 <= 31.97 -0.0243
+  [voz  ] 0.01 < aud__F3frequency_sma3nz_stddevNorm__std <= 0.01 -0.0230
+  [voz  ] aud__shimmerLocaldB_sma3nz_amean__p50 <= 1.19 +0.0228
+  [voz  ] -158.43 < aud__F1amplitudeLogRelF0_sma3nz_amean__p20 <= -133.06 -0.0205
+  [voz  ] -0.71 < aud__mfcc2V_sma3nz_stddevNorm__p80 <= -0.55 -0.0189
+  [voz  ] aud__F0semitoneFrom27.5Hz_sma3nz_percentile80.0__std <= 2.80 +0.0187
+  [voz  ] aud__F3amplitudeLogRelF0_sma3nz_amean__std > 28.16 -0.0168
