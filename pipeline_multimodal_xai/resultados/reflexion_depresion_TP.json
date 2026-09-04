@@ -1,0 +1,325 @@
+{
+  "eje": "depresion",
+  "caso": "TP",
+  "pid": 35,
+  "rondas": 2,
+  "aprobado_final": true,
+  "estancado": false,
+  "version_final": {
+    "chequeo_numerico": {
+      "consistente": true,
+      "nota": "La suma de los valores SHAP más el base_value (0.7119) coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.9939) y p_pred_full (0.7119), lo que sugiere que el modelo presenta inestabilidad o una calibración distinta en este caso al ser evaluado fuera de muestra."
+    },
+    "lectura_clinica": [
+      {
+        "feature": "vid__anger_mean",
+        "lectura": "La presencia de este prototipo facial se asocia al afecto negativo y al patrón clásico de tristeza en el prior clínico de depresión.",
+        "con_prior": true
+      },
+      {
+        "feature": "vid__anger_std",
+        "lectura": "La variabilidad en el prototipo de ira se asocia al afecto negativo facial según el prior de depresión.",
+        "con_prior": true
+      },
+      {
+        "feature": "vid__AU01_mean",
+        "lectura": "El elevador interno de la ceja es un componente del patrón facial de tristeza/afecto negativo definido en el prior de depresión.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__slopeV0-500_sma3nz_amean__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__equivalentSoundLevel_dBp__mean",
+        "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevUnvoicedSegmentLength__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__equivalentSoundLevel_dBp__std",
+        "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+        "con_prior": false
+      }
+    ],
+    "resumen": "La predicción de riesgo de depresión está impulsada principalmente por rasgos faciales (anger_mean, AU01) que se alinean con el prior clínico de afecto negativo. Las variables acústicas de mayor peso no tienen una correspondencia directa con los indicadores de depresión del prior (formantes/balance espectral), y se ha corregido la interpretación de las variables de energía vocal, las cuales no deben asociarse al eje de depresión."
+  },
+  "historial": [
+    {
+      "ronda": 1,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma SHAP coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.9939) y p_pred_full (0.7119), lo que sugiere que el modelo tiene una inestabilidad o sobreajuste importante en este caso fuera de muestra."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "vid__anger_mean",
+            "lectura": "Presencia de prototipo 'anger', asociado al afecto negativo facial y patrón de tristeza según el prior clínico.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__anger_std",
+            "lectura": "Variabilidad en el prototipo 'anger', sin prior establecido para la variabilidad específica de esta métrica.",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__AU01_mean",
+            "lectura": "Elevación del elevador interno de ceja, consistente con el patrón de tristeza/afecto negativo facial.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+            "lectura": "Sin prior establecido.",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeV0-500_sma3nz_amean__std",
+            "lectura": "Sin prior establecido.",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "Sin prior establecido.",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__equivalentSoundLevel_dBp__mean",
+            "lectura": "Nivel de energía vocal (loudness) bajo, asociado a control de intensidad o voz apagada.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__StddevUnvoicedSegmentLength__p80",
+            "lectura": "Sin prior establecido.",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+            "lectura": "Sin prior establecido.",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__equivalentSoundLevel_dBp__std",
+            "lectura": "Variabilidad en la energía vocal, sin prior establecido para la desviación estándar de esta métrica.",
+            "con_prior": false
+          }
+        ],
+        "resumen": "La predicción de riesgo de depresión está impulsada principalmente por indicadores faciales de afecto negativo (prototipo 'anger' y AU01). Aunque la consistencia numérica es correcta, la gran diferencia entre p_oof y p_pred_full indica que el modelo no es robusto para este caso."
+      },
+      "auditoria_senior": {
+        "aprobado": false,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [
+          "En 'aud__equivalentSoundLevel_dBp__mean', se marcó 'con_prior: true' asociándolo al eje de depresión. Sin embargo, el prior clínico asigna la energía vocal (loudness) al eje de ansiedad (tensión laríngea / control de intensidad), mientras que para depresión el prior requiere amplitudes de formantes relativas a F0 o balance espectral (alphaRatio, hammarbergIndex)."
+        ],
+        "feedback_para_junior": "El chequeo numérico es perfecto y la lectura de las características faciales (vid__anger_mean y vid__AU01_mean) es correcta bajo el eje de depresión. No obstante, has marcado 'con_prior: true' en la variable de energía vocal ('aud__equivalentSoundLevel_dBp__mean') interpretándola dentro de depresión. Recuerda revisar bien la asignación por eje del prior: el control de intensidad/loudness pertenece al eje de ansiedad, mientras que en depresión el prior acústico se limita a amplitudes de formantes y balance espectral.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma SHAP coincide exactamente con p_pred_full (0.7119). Discrepancia notable entre p_oof (0.9939) y p_pred_full (0.7119)."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "vid__anger_mean",
+              "lectura": "Presencia de prototipo 'anger', asociado al afecto negativo facial y patrón clásico de tristeza según el prior clínico.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__anger_std",
+              "lectura": "Variabilidad en el prototipo 'anger', sin prior específico establecido.",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__AU01_mean",
+              "lectura": "Elevación del elevador interno de la ceja, alineado con el patrón facial de tristeza/ceño en depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+              "lectura": "Sin prior clínico específico en el marco teórico del proyecto.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeV0-500_sma3nz_amean__std",
+              "lectura": "Sin prior clínico específico en el marco teórico del proyecto.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "Sin prior clínico específico en el marco teórico del proyecto.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__equivalentSoundLevel_dBp__mean",
+              "lectura": "Nivel medio de energía vocal (loudness). Aunque es una métrica acústica relevante, los descriptores de loudness están asignados en el prior al eje de ansiedad (control de intensidad), no al de depresión.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevUnvoicedSegmentLength__p80",
+              "lectura": "Sin prior clínico específico en el marco teórico del proyecto.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+              "lectura": "Sin prior clínico específico en el marco teórico del proyecto.",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__equivalentSoundLevel_dBp__std",
+              "lectura": "Variabilidad en la energía vocal, sin prior específico en el eje de depresión.",
+              "con_prior": false
+            }
+          ],
+          "resumen": "La predicción de riesgo de depresión está impulsada principalmente por moduladores faciales de afecto negativo respaldados por el prior clínico (prototipo 'anger' y AU01). Las variables acústicas presentes no corresponden a los indicadores de depresión del prior (amplitudes de formantes y balance espectral), perteneciendo la energía vocal al prior de ansiedad. Existe además una marcada discrepancia entre p_oof (0.9939) y p_pred_full (0.7119) que requiere cautela en la generalización del caso."
+        }
+      }
+    },
+    {
+      "ronda": 2,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de los valores SHAP más el base_value (0.7119) coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.9939) y p_pred_full (0.7119), lo que sugiere que el modelo presenta inestabilidad o una calibración distinta en este caso al ser evaluado fuera de muestra."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "vid__anger_mean",
+            "lectura": "La presencia de este prototipo facial se asocia al afecto negativo y al patrón clásico de tristeza en el prior clínico de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__anger_std",
+            "lectura": "La variabilidad en el prototipo de ira se asocia al afecto negativo facial según el prior de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__AU01_mean",
+            "lectura": "El elevador interno de la ceja es un componente del patrón facial de tristeza/afecto negativo definido en el prior de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeV0-500_sma3nz_amean__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__equivalentSoundLevel_dBp__mean",
+            "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevUnvoicedSegmentLength__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__equivalentSoundLevel_dBp__std",
+            "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+            "con_prior": false
+          }
+        ],
+        "resumen": "La predicción de riesgo de depresión está impulsada principalmente por rasgos faciales (anger_mean, AU01) que se alinean con el prior clínico de afecto negativo. Las variables acústicas de mayor peso no tienen una correspondencia directa con los indicadores de depresión del prior (formantes/balance espectral), y se ha corregido la interpretación de las variables de energía vocal, las cuales no deben asociarse al eje de depresión."
+      },
+      "auditoria_senior": {
+        "aprobado": true,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [],
+        "feedback_para_junior": "Excelente trabajo. Has corregido adecuadamente la asignación de la variable de loudness (`aud__equivalentSoundLevel_dBp__mean`), marcándola como `con_prior: false` dentro del eje de depresión, en estricto apego al prior clínico. Los datos numéricos y las interpretaciones clínicas de las variables faciales son totalmente consistentes y precisos.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de los valores SHAP más el base_value (0.7119) coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.9939) y p_pred_full (0.7119), lo que sugiere que el modelo presenta inestabilidad o una calibración distinta en este caso al ser evaluado fuera de muestra."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "vid__anger_mean",
+              "lectura": "La presencia de este prototipo facial se asocia al afecto negativo y al patrón clásico de tristeza en el prior clínico de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__anger_std",
+              "lectura": "La variabilidad en el prototipo de ira se asocia al afecto negativo facial según el prior de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__AU01_mean",
+              "lectura": "El elevador interno de la ceja es un componente del patrón facial de tristeza/afecto negativo definido en el prior de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeV0-500_sma3nz_amean__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__equivalentSoundLevel_dBp__mean",
+              "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevUnvoicedSegmentLength__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__equivalentSoundLevel_dBp__std",
+              "lectura": "sin prior establecido (el prior de depresión solo contempla amplitudes de formantes y balance espectral; el loudness pertenece al eje de ansiedad).",
+              "con_prior": false
+            }
+          ],
+          "resumen": "La predicción de riesgo de depresión está impulsada principalmente por rasgos faciales (anger_mean, AU01) que se alinean con el prior clínico de afecto negativo. Las variables acústicas de mayor peso no tienen una correspondencia directa con los indicadores de depresión del prior (formantes/balance espectral), y se ha corregido la interpretación de las variables de energía vocal, las cuales no deben asociarse al eje de depresión."
+        }
+      }
+    }
+  ]
+}

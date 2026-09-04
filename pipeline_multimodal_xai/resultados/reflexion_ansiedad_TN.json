@@ -1,0 +1,346 @@
+{
+  "eje": "ansiedad",
+  "caso": "TN",
+  "pid": 54,
+  "rondas": 1,
+  "aprobado_final": true,
+  "estancado": false,
+  "version_final": {
+    "chequeo_numerico": {
+      "consistente": true,
+      "nota": "La suma de SHAP y el base_value coincide exactamente con p_pred_full (0.1892). Existe una discrepancia significativa entre p_oof (0.0007) y p_pred_full (0.1892), lo que sugiere que este caso no es un acierto limpio fuera de muestra."
+    },
+    "lectura_clinica": [
+      {
+        "feature": "vid__AU15_std",
+        "lectura": "La variabilidad en el depresor de la comisura labial (AU15) contribuye a reducir la probabilidad de ansiedad, sugiriendo menor tensión perioral.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+        "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, indicando un control de tensión laríngea consistente con un perfil de menor riesgo.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+        "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p80",
+        "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__HNRdBACF_sma3nz_stddevNorm__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__slopeUV500-1500_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__mfcc4_sma3_stddevNorm__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__mfcc2V_sma3nz_stddevNorm__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__jitterLocal_sma3nz_amean__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__slopeV500-1500_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      }
+    ],
+    "resumen": "El modelo clasifica al sujeto como 'sin riesgo' de ansiedad. La predicción es impulsada principalmente por la baja variabilidad en el depresor de la comisura labial (AU15) y medidas de fonación (H1-H2) que sugieren ausencia de tensión laríngea excesiva, alineándose con el prior clínico para ansiedad."
+  },
+  "historial": [
+    {
+      "ronda": 1,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de SHAP y el base_value coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.0007) y p_pred_full (0.1892), lo que sugiere que este caso no es un acierto limpio fuera de muestra."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "vid__AU15_std",
+            "lectura": "La variabilidad en el depresor de la comisura labial (AU15) contribuye a reducir la probabilidad de ansiedad, sugiriendo menor tensión perioral.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+            "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, indicando un control de tensión laríngea consistente con un perfil de menor riesgo.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+            "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p80",
+            "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__HNRdBACF_sma3nz_stddevNorm__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeUV500-1500_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__mfcc4_sma3_stddevNorm__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__mfcc2V_sma3nz_stddevNorm__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__jitterLocal_sma3nz_amean__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__slopeV500-1500_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          }
+        ],
+        "resumen": "El modelo clasifica al sujeto como 'sin riesgo' de ansiedad. La predicción es impulsada principalmente por la baja variabilidad en el depresor de la comisura labial (AU15) y medidas de fonación (H1-H2) que sugieren ausencia de tensión laríngea excesiva, alineándose con el prior clínico para ansiedad."
+      },
+      "auditoria_senior": {
+        "aprobado": true,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [],
+        "feedback_para_junior": "El borrador es completamente correcto. Las comprobaciones numéricas concuerdan perfectamente con los datos del caso y la identificación del desajuste entre p_oof y p_pred_full es adecuada. Las interpretaciones clínicas para la variabilidad de AU15 y las métricas de fonación H1-H2 se ajustan estrictamente al prior clínico de la tesis para el eje de ansiedad.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de SHAP y el base_value coincide exactamente con p_pred_full (0.1892). Existe una discrepancia significativa entre p_oof (0.0007) y p_pred_full (0.1892), lo que sugiere que este caso no es un acierto limpio fuera de muestra."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "vid__AU15_std",
+              "lectura": "La variabilidad en el depresor de la comisura labial (AU15) contribuye a reducir la probabilidad de ansiedad, sugiriendo menor tensión perioral.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+              "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, indicando un control de tensión laríngea consistente con un perfil de menor riesgo.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+              "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p80",
+              "lectura": "La medida de fonación (H1-H2) contribuye a reducir la probabilidad de ansiedad, consistente con el control de tensión laríngea.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__HNRdBACF_sma3nz_stddevNorm__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeUV500-1500_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__mfcc4_sma3_stddevNorm__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__mfcc2V_sma3nz_stddevNorm__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__jitterLocal_sma3nz_amean__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__slopeV500-1500_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            }
+          ],
+          "resumen": "El modelo clasifica al sujeto como 'sin riesgo' de ansiedad. La predicción es impulsada principalmente por la baja variabilidad en el depresor de la comisura labial (AU15) y medidas de fonación (H1-H2) que sugieren ausencia de tensión laríngea excesiva, alineándose con el prior clínico para ansiedad."
+        }
+      }
+    }
+  ]
+}

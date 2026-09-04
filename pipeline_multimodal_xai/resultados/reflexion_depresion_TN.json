@@ -1,0 +1,575 @@
+{
+  "eje": "depresion",
+  "caso": "TN",
+  "pid": 9,
+  "rondas": 2,
+  "aprobado_final": true,
+  "estancado": false,
+  "version_final": {
+    "chequeo_numerico": {
+      "consistente": true,
+      "nota": "La suma de SHAP y el base_value coinciden exactamente con p_pred_full (0.5536). Se observa además una discrepancia relevante entre p_oof (0.0088) y p_pred_full (0.5536), sugerente de inestabilidad fuera de muestra."
+    },
+    "lectura_clinica": [
+      {
+        "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "vid__anger_mean",
+        "lectura": "Presencia de afecto negativo facial, consistente con el prototipo de 'anger' asociado a la depresión en el prior clínico.",
+        "con_prior": true
+      },
+      {
+        "feature": "vid__AU01_mean",
+        "lectura": "Elevación interna de la ceja, consistente con el patrón de tristeza/afecto negativo facial definido para depresión.",
+        "con_prior": true
+      },
+      {
+        "feature": "vid__anger_std",
+        "lectura": "Variabilidad en el afecto negativo facial (anger), consistente con el prior de depresión.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__F0semitoneFrom27.5Hz_sma3nz_percentile50.0__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__spectralFluxUV_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__logRelF0-H1-A3_sma3nz_amean__mean",
+        "lectura": "sin prior establecido (esta variable pertenece al prior de ansiedad, no al de depresión).",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__F2frequency_sma3nz_stddevNorm__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "vid__AU24_mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevUnvoicedSegmentLength__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      }
+    ],
+    "resumen": "El modelo predice riesgo de depresión basándose principalmente en indicadores faciales (AU01 y prototipo 'anger'), los cuales son consistentes con el prior clínico de depresión. La mayoría de las variables de audio no tienen un prior establecido en la tesis para este eje. Se observa una inconsistencia crítica entre la probabilidad OOF y la predicción final, lo que sugiere que el caso no es representativo del comportamiento general del modelo."
+  },
+  "historial": [
+    {
+      "ronda": 1,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de SHAP coincide con p_pred_full. Existe una discrepancia crítica entre p_oof (0.0088) y p_pred_full (0.5536), lo que indica que el modelo cambió drásticamente su predicción en inferencia respecto al entrenamiento, sugiriendo un caso inestable o fuera de distribución."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__anger_mean",
+            "lectura": "Presencia de afecto negativo facial (prototipo 'anger'), asociado a patrones de tristeza en el prior clínico de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__AU01_mean",
+            "lectura": "Elevación del elevador interno de la ceja, consistente con el patrón de tristeza y afecto negativo facial del prior clínico de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__anger_std",
+            "lectura": "Variabilidad en el afecto negativo facial, consistente con el patrón de tristeza del prior clínico de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__F0semitoneFrom27.5Hz_sma3nz_percentile50.0__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__spectralFluxUV_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__logRelF0-H1-A3_sma3nz_amean__mean",
+            "lectura": "Indicador de balance espectral relacionado con la articulación y calidad de voz, relevante para la detección de voz apagada en depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__F2frequency_sma3nz_stddevNorm__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__AU24_mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          }
+        ],
+        "resumen": "El modelo clasifica el caso como 'riesgo' de depresión. La predicción está fuertemente apoyada por rasgos faciales (AU01 y prototipo 'anger') que coinciden con el prior clínico de tristeza/depresión. Existe una discrepancia numérica importante entre el valor OOF y la predicción final, sugiriendo que el modelo no se comporta de forma consistente con su entrenamiento en este caso particular."
+      },
+      "auditoria_senior": {
+        "aprobado": false,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [
+          "aud__logRelF0-H1-A3_sma3nz_amean__mean: Atribuida al prior de depresión como balance espectral/voz apagada con 'con_prior: true'. En el prior clínico definido, logRelF0-H1-A3 pertenece al eje de ansiedad (fonación tensa vs soplada / tensión laríngea). Para depresión, el balance espectral está acotado exclusivamente a alphaRatio y hammarbergIndex."
+        ],
+        "feedback_para_junior": "Revisa detenidamente la asignación de variables según el eje del caso (depresión vs. ansiedad). La variable 'aud__logRelF0-H1-A3_sma3nz_amean__mean' corresponde al prior de ansiedad (fonación tensa vs soplada) y no al eje de depresión. En depresión, el prior de balance espectral solo incluye alphaRatio y hammarbergIndex. Cambia su estado a 'con_prior: false' y ajusta su lectura.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de los valores SHAP más el valor base (0.4096) es igual a p_pred_full (0.5536). Se observa una discrepancia notable entre p_oof (0.0088) y p_pred_full (0.5536), indicando comportamiento inusual o fuera de distribución en inferencia."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__anger_mean",
+              "lectura": "Presencia de afecto negativo facial (prototipo 'anger'), asociado a patrones de tristeza en el prior clínico de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__AU01_mean",
+              "lectura": "Elevación del elevador interno de la ceja, consistente con el patrón de tristeza y afecto negativo facial del prior clínico de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__anger_std",
+              "lectura": "Variabilidad en el afecto negativo facial (prototipo 'anger'), consistente con el patrón de tristeza del prior clínico de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__F0semitoneFrom27.5Hz_sma3nz_percentile50.0__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__spectralFluxUV_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__logRelF0-H1-A3_sma3nz_amean__mean",
+              "lectura": "sin prior establecido (logRelF0-H1-A3 aplica a tensión laríngea en el prior de ansiedad, no en depresión)",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F2frequency_sma3nz_stddevNorm__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__AU24_mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            }
+          ],
+          "resumen": "El modelo clasifica el caso como 'riesgo' de depresión (p_pred_full = 0.5536). La predicción se apoya clínicamente en rasgos faciales (AU01 y prototipo 'anger') alineados con el prior de tristeza/afecto negativo en depresión. La característica acústica logRelF0-H1-A3 no aplica al prior de depresión sino al de ansiedad. Existe una discrepancia crítica entre p_oof (0.0088) y p_pred_full (0.5536) que debe considerarse al interpretar la estabilidad de este resultado."
+        }
+      }
+    },
+    {
+      "ronda": 2,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de SHAP y el base_value coinciden exactamente con p_pred_full (0.5536). Sin embargo, existe una discrepancia significativa entre p_oof (0.0088) y p_pred_full (0.5536), lo que sugiere que el modelo clasifica este caso de forma muy distinta fuera de muestra, indicando inestabilidad o falta de generalización."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__anger_mean",
+            "lectura": "Presencia de afecto negativo facial, consistente con el prototipo de 'anger' asociado a la depresión en el prior clínico.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__AU01_mean",
+            "lectura": "Elevación interna de la ceja, consistente con el patrón de tristeza/afecto negativo facial definido para depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__anger_std",
+            "lectura": "Variabilidad en el afecto negativo facial (anger), consistente con el prior de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__F0semitoneFrom27.5Hz_sma3nz_percentile50.0__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__spectralFluxUV_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__logRelF0-H1-A3_sma3nz_amean__mean",
+            "lectura": "sin prior establecido (esta variable pertenece al prior de ansiedad, no al de depresión).",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F2frequency_sma3nz_stddevNorm__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__AU24_mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          }
+        ],
+        "resumen": "El modelo predice riesgo de depresión basándose principalmente en indicadores faciales (AU01 y prototipo 'anger'), los cuales son consistentes con el prior clínico de depresión. La mayoría de las variables de audio no tienen un prior establecido en la tesis para este eje. Se observa una inconsistencia crítica entre la probabilidad OOF y la predicción final, lo que sugiere que el caso no es representativo del comportamiento general del modelo."
+      },
+      "auditoria_senior": {
+        "aprobado": true,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [],
+        "feedback_para_junior": "Excelente trabajo. La corrección señalada en la ronda 1 sobre la variable aud__logRelF0-H1-A3_sma3nz_amean__mean ha sido implementada correctamente (marcada como con_prior: false para el eje de depresión). Los valores numéricos son precisos y las lecturas clínicas están totalmente alineadas con el prior definido.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de SHAP y el base_value coinciden exactamente con p_pred_full (0.5536). Se observa además una discrepancia relevante entre p_oof (0.0088) y p_pred_full (0.5536), sugerente de inestabilidad fuera de muestra."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__anger_mean",
+              "lectura": "Presencia de afecto negativo facial, consistente con el prototipo de 'anger' asociado a la depresión en el prior clínico.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__AU01_mean",
+              "lectura": "Elevación interna de la ceja, consistente con el patrón de tristeza/afecto negativo facial definido para depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "vid__anger_std",
+              "lectura": "Variabilidad en el afecto negativo facial (anger), consistente con el prior de depresión.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__F0semitoneFrom27.5Hz_sma3nz_percentile50.0__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__spectralFluxUV_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__logRelF0-H1-A3_sma3nz_amean__mean",
+              "lectura": "sin prior establecido (esta variable pertenece al prior de ansiedad, no al de depresión).",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F2frequency_sma3nz_stddevNorm__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__AU24_mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            }
+          ],
+          "resumen": "El modelo predice riesgo de depresión basándose principalmente en indicadores faciales (AU01 y prototipo 'anger'), los cuales son consistentes con el prior clínico de depresión. La mayoría de las variables de audio no tienen un prior establecido en la tesis para este eje. Se observa una inconsistencia crítica entre la probabilidad OOF y la predicción final, lo que sugiere que el caso no es representativo del comportamiento general del modelo."
+        }
+      }
+    }
+  ]
+}
