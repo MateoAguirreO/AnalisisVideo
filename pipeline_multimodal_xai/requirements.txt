@@ -2,3 +2,4 @@
 # Extiende ../requirements.txt (numpy, pandas, scipy, scikit-learn, xgboost, shap).
 lime
 matplotlib
+google-genai   # xai_reflexion.py (loop jr/senior); requiere GEMINI_API_KEY

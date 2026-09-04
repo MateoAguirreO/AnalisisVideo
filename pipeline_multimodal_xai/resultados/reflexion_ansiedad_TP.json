@@ -1,0 +1,475 @@
+{
+  "eje": "ansiedad",
+  "caso": "TP",
+  "pid": 61,
+  "rondas": 2,
+  "aprobado_final": true,
+  "estancado": false,
+  "version_final": {
+    "chequeo_numerico": {
+      "consistente": true,
+      "nota": "La suma de los valores SHAP más el base_value coincide exactamente con p_pred_full (0.5516). Se observa una discrepancia entre p_oof (0.7592) y p_pred_full (0.5516)."
+    },
+    "lectura_clinica": [
+      {
+        "feature": "vid__AU15_std",
+        "lectura": "La variabilidad en el depresor de la comisura labial sugiere tensión perioral, consistente con el marcador de ansiedad.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+        "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+        "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__slopeV500-1500_sma3nz_stddevNorm__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__F3frequency_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "vid__AU05_mean",
+        "lectura": "La elevación del párpado superior sugiere tensión frontal/párpado, consistente con el marcador de ansiedad.",
+        "con_prior": true
+      },
+      {
+        "feature": "aud__mfcc4V_sma3nz_stddevNorm__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__spectralFlux_sma3_stddevNorm__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__F2bandwidth_sma3nz_amean__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__MeanUnvoicedSegmentLength__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__std",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      },
+      {
+        "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+        "lectura": "sin prior establecido",
+        "con_prior": false
+      }
+    ],
+    "resumen": "El caso presenta una predicción de riesgo de ansiedad respaldada principalmente por indicadores de tensión facial (AU15, AU05) y fonación tensa (logRelF0-H1-H2). La discrepancia entre p_oof y p_pred_full indica una variación en la confianza del modelo entre la validación cruzada y la predicción final del sujeto."
+  },
+  "historial": [
+    {
+      "ronda": 1,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de SHAP coincide exactamente con p_pred_full. Existe una discrepancia significativa entre p_oof (0.7592) y p_pred_full (0.5516), lo que sugiere que el modelo muestra inestabilidad o falta de generalización en este caso fuera de muestra."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "vid__AU15_std",
+            "lectura": "Variabilidad elevada en el depresor de la comisura labial, consistente con tensión perioral asociada a ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+            "lectura": "Indicador de fonación tensa, consistente con el control de tensión laríngea asociado a ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+            "lectura": "Indicador de fonación tensa, consistente con el control de tensión laríngea asociado a ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__slopeV500-1500_sma3nz_stddevNorm__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F3frequency_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean",
+            "lectura": "Relacionado con amplitudes de formantes, consistente con articulación reducida o voz apagada en el contexto de depresión.",
+            "con_prior": true
+          },
+          {
+            "feature": "vid__AU05_mean",
+            "lectura": "Elevación del párpado superior, consistente con tensión frontal/parpado asociada a ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__mfcc4V_sma3nz_stddevNorm__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__spectralFlux_sma3_stddevNorm__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F2bandwidth_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          }
+        ],
+        "resumen": "La predicción de riesgo de ansiedad está impulsada principalmente por indicadores de tensión facial (AU15) y tensión laríngea (logRelF0-H1-H2). Aunque el modelo es consistente internamente, la diferencia entre p_oof y p_pred_full sugiere que este caso es un ejemplo de baja confianza o inestabilidad en la predicción fuera de muestra."
+      },
+      "auditoria_senior": {
+        "aprobado": false,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [
+          "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean: El junior atribuyó la característica al prior de depresión ('articulación reducida o voz apagada') y la marcó como 'con_prior: true', pero el eje en evaluación es ansiedad. El prior de amplitudes de formantes relativas a F0 aplica para depresión, por lo que en el eje de ansiedad no tiene prior establecido."
+        ],
+        "feedback_para_junior": "El chequéo numérico es correcto. Sin embargo, en la lectura clínica de 'aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean', atribuiste el hallazgo al mecanismo de depresión ('articulación reducida / voz apagada') y lo marcaste con 'con_prior: true'. Dado que este caso evalúa el eje de ansiedad, no corresponde aplicar el prior de depresión ni marcarlo como respaldado por prior. Para este eje, dicha feature debe marcarse con con_prior: false.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de SHAP + base_value (0.4004 + 0.1512 = 0.5516) coincide exactamente con p_pred_full (0.5516). Existe una discrepancia entre p_oof (0.7592) y p_pred_full (0.5516), esperable en evaluación fuera de muestra."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "vid__AU15_std",
+              "lectura": "Variabilidad elevada en el depresor de la comisura labial, consistente con tensión perioral asociada a ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+              "lectura": "Indicador de fonación tensa, consistente con el control de tensión laríngea asociado a ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+              "lectura": "Indicador de fonación tensa, consistente con el control de tensión laríngea asociado a ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__slopeV500-1500_sma3nz_stddevNorm__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F3frequency_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean",
+              "lectura": "sin prior establecido para el eje de ansiedad (corresponde a prior de depresión)",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__AU05_mean",
+              "lectura": "Elevación del párpado superior, consistente con tensión frontal/parpado asociada a ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__mfcc4V_sma3nz_stddevNorm__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__spectralFlux_sma3_stddevNorm__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F2bandwidth_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            }
+          ],
+          "resumen": "La predicción de riesgo de ansiedad está impulsada principalmente por indicadores de tensión facial perioral (AU15_std) y tensión laríngea (logRelF0-H1-H2), ambos respaldados por el prior clínico del eje de ansiedad. Las demás características aportan explicabilidad secundaria sin prior específico para este eje."
+        }
+      }
+    },
+    {
+      "ronda": 2,
+      "borrador_jr": {
+        "chequeo_numerico": {
+          "consistente": true,
+          "nota": "La suma de los valores SHAP más el base_value coincide exactamente con p_pred_full. Se observa una discrepancia significativa entre p_oof (0.7592) y p_pred_full (0.5516), lo que sugiere que el modelo ajustó su confianza al procesar este caso específico fuera de muestra."
+        },
+        "lectura_clinica": [
+          {
+            "feature": "vid__AU15_std",
+            "lectura": "La variabilidad en el depresor de la comisura labial sugiere tensión perioral, consistente con el marcador de ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+            "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+            "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__slopeV500-1500_sma3nz_stddevNorm__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F3frequency_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "vid__AU05_mean",
+            "lectura": "La elevación del párpado superior sugiere tensión frontal/parpado, consistente con el marcador de ansiedad.",
+            "con_prior": true
+          },
+          {
+            "feature": "aud__mfcc4V_sma3nz_stddevNorm__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__spectralFlux_sma3_stddevNorm__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__F2bandwidth_sma3nz_amean__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__MeanUnvoicedSegmentLength__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__std",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          },
+          {
+            "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+            "lectura": "sin prior establecido",
+            "con_prior": false
+          }
+        ],
+        "resumen": "El caso presenta una predicción de riesgo de ansiedad respaldada principalmente por indicadores de tensión facial (AU15) y fonación tensa (logRelF0-H1-H2). La discrepancia entre p_oof y p_pred_full indica una inestabilidad en la generalización del modelo para este sujeto."
+      },
+      "auditoria_senior": {
+        "aprobado": true,
+        "errores_numericos": [],
+        "lecturas_no_sostenidas": [],
+        "feedback_para_junior": "Excelente revisión. Se ha corregido adecuadamente la lectura de aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean para que refleje correctamente la ausencia de prior directo en el eje de ansiedad. El reporte es numéricamente preciso y está alineado con el prior clínico.",
+        "version_final": {
+          "chequeo_numerico": {
+            "consistente": true,
+            "nota": "La suma de los valores SHAP más el base_value coincide exactamente con p_pred_full (0.5516). Se observa una discrepancia entre p_oof (0.7592) y p_pred_full (0.5516)."
+          },
+          "lectura_clinica": [
+            {
+              "feature": "vid__AU15_std",
+              "lectura": "La variabilidad en el depresor de la comisura labial sugiere tensión perioral, consistente con el marcador de ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__p50",
+              "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__logRelF0-H1-H2_sma3nz_amean__mean",
+              "lectura": "Relacionado con la fonación tensa, consistente con el control de intensidad y tensión laríngea asociado a la ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__slopeV500-1500_sma3nz_stddevNorm__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F3frequency_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F1amplitudeLogRelF0_sma3nz_stddevNorm__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "vid__AU05_mean",
+              "lectura": "La elevación del párpado superior sugiere tensión frontal/párpado, consistente con el marcador de ansiedad.",
+              "con_prior": true
+            },
+            {
+              "feature": "aud__mfcc4V_sma3nz_stddevNorm__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__spectralFlux_sma3_stddevNorm__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__F2bandwidth_sma3nz_amean__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__MeanUnvoicedSegmentLength__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__p20",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__std",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            },
+            {
+              "feature": "aud__StddevVoicedSegmentLengthSec__mean",
+              "lectura": "sin prior establecido",
+              "con_prior": false
+            }
+          ],
+          "resumen": "El caso presenta una predicción de riesgo de ansiedad respaldada principalmente por indicadores de tensión facial (AU15, AU05) y fonación tensa (logRelF0-H1-H2). La discrepancia entre p_oof y p_pred_full indica una variación en la confianza del modelo entre la validación cruzada y la predicción final del sujeto."
+        }
+      }
+    }
+  ]
+}

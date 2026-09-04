@@ -1,0 +1,154 @@
+{
+  "eje": "depresion",
+  "caso": "TP",
+  "pid": 35,
+  "y_true": 1,
+  "prediccion_clase": "riesgo",
+  "p_oof": 0.9939,
+  "p_pred_full": 0.7119,
+  "base_value": 0.4096,
+  "suma_shap_total_mas_base": 0.7119,
+  "n_features_total": 506,
+  "top_features": [
+    {
+      "feature": "vid__anger_mean",
+      "modalidad": "video",
+      "familia": "emocion",
+      "valor_feature": 0.2469723522663116,
+      "shap_value": 0.38615
+    },
+    {
+      "feature": "vid__anger_std",
+      "modalidad": "video",
+      "familia": "emocion",
+      "valor_feature": 0.1846269071102142,
+      "shap_value": -0.06002
+    },
+    {
+      "feature": "vid__AU01_mean",
+      "modalidad": "video",
+      "familia": "cara superior",
+      "valor_feature": 0.2910596132278442,
+      "shap_value": -0.01301
+    },
+    {
+      "feature": "aud__mfcc2_sma3_stddevNorm__p50",
+      "modalidad": "audio",
+      "familia": "MFCC",
+      "valor_feature": -1.8110767602920528,
+      "shap_value": -0.01074
+    },
+    {
+      "feature": "aud__slopeV0-500_sma3nz_amean__std",
+      "modalidad": "audio",
+      "familia": "espectral",
+      "valor_feature": 0.004186341174517089,
+      "shap_value": 0.00283
+    },
+    {
+      "feature": "aud__MeanUnvoicedSegmentLength__p50",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.1376923024654388,
+      "shap_value": -0.00262
+    },
+    {
+      "feature": "aud__equivalentSoundLevel_dBp__mean",
+      "modalidad": "audio",
+      "familia": "loudness/energia",
+      "valor_feature": -31.596128194472367,
+      "shap_value": -0.00143
+    },
+    {
+      "feature": "aud__StddevUnvoicedSegmentLength__p80",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.20216431915760041,
+      "shap_value": 0.00142
+    },
+    {
+      "feature": "aud__slopeUV0-500_sma3nz_amean__mean",
+      "modalidad": "audio",
+      "familia": "espectral",
+      "valor_feature": 0.0960834236706004,
+      "shap_value": -0.00139
+    },
+    {
+      "feature": "aud__equivalentSoundLevel_dBp__std",
+      "modalidad": "audio",
+      "familia": "loudness/energia",
+      "valor_feature": 1.9828125275884605,
+      "shap_value": 0.00114
+    },
+    {
+      "feature": "aud__StddevUnvoicedSegmentLength__p50",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.1512646377086639,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__StddevUnvoicedSegmentLength__p20",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.11600474864244455,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__StddevUnvoicedSegmentLength__std",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.24861441280404623,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__StddevUnvoicedSegmentLength__mean",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.19427117299945912,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__MeanUnvoicedSegmentLength__p80",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.19199998676776886,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__MeanUnvoicedSegmentLength__p20",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.11323809176683426,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__MeanUnvoicedSegmentLength__std",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.2536664273489735,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__MeanUnvoicedSegmentLength__mean",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.1795191265204373,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__StddevVoicedSegmentLengthSec__p80",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.2246992200613022,
+      "shap_value": 0.0
+    },
+    {
+      "feature": "aud__StddevVoicedSegmentLengthSec__p50",
+      "modalidad": "audio",
+      "familia": "temporal/tasa",
+      "valor_feature": 0.1750874668359756,
+      "shap_value": 0.0
+    }
+  ]
+}
